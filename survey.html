@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#073b25">
+  <meta name="description" content="Complete the Royal Red Sandalwood Farmlands survey and plot enquiry form.">
+  <title>Survey & Plot Enquiry | Royal Red Sandalwood Farmlands</title>
+  <style>
+    :root{--forest:#073b25;--gold:#f2c94c;--cream:#fbf7ed;--ink:#1b2b20;--red:#a91f22}
+    *{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+    header{background:#fff;box-shadow:0 3px 18px #00000012}.nav{max-width:1180px;margin:auto;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none}.mark{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 35% 25%,#267348,#032718 72%);border:2px solid #d8b34a;color:var(--gold);font-size:28px}
+    .brand strong{display:block;color:var(--red);font: bold 25px Georgia,serif;letter-spacing:.08em}.brand small{display:block;color:var(--forest);font-weight:800;letter-spacing:.09em;font-size:11px}
+    .back{color:var(--forest);font-weight:bold;text-decoration:none}.hero{padding:48px 5%;text-align:center;color:white;background:linear-gradient(120deg,#032718,#17643d)}
+    .hero h1{font: bold clamp(32px,5vw,48px) Georgia,serif;margin:0 0 8px;color:var(--gold)}.hero p{max-width:720px;margin:auto;color:#e7f0e8}
+    main{max-width:1050px;margin:34px auto;padding:0 20px 50px}.survey-card{background:#fff;border-radius:20px;padding:clamp(16px,3vw,28px);box-shadow:0 15px 42px #08231516}
+    .survey-card h2{margin:0 0 8px;color:var(--forest);font: bold 25px Georgia,serif}.hint{color:#5e6b61;margin:0 0 18px}.frame-wrap{height: min(78vh,900px);min-height:650px;border:1px solid #e4e9df;border-radius:12px;overflow:hidden;background:#f8faf6}
+    iframe{display:block;width:100%;height:100%;border:0}.fallback{text-align:center;padding:22px 10px 5px}.fallback p{color:#5e6b61;margin:0 0 12px}.btn{display:inline-block;padding:13px 22px;border-radius:999px;background:var(--gold);color:#1b2b20;text-decoration:none;font-weight:800}
+    footer{text-align:center;background:#032718;color:#fff;padding:22px 5%;font-size:14px}footer a{color:var(--gold)}
+    @media(max-width:600px){.frame-wrap{min-height:680px;height:75vh}.brand strong{font-size:21px}}
+  </style>
+</head>
+<body>
+  <header><nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">🌳</span><span><strong>ROYAL</strong><small>RED SANDALWOOD FARMLANDS</small></span></a>
+    <a class="back" href="index.html">← Back to Home</a>
+  </nav></header>
+  <section class="hero"><h1>Survey & Plot Enquiry</h1><p>Tell us which plot plan you are interested in. Complete the survey below to submit your enquiry.</p></section>
+  <main><section class="survey-card">
+    <h2>Royal Red Sandalwood Farmlands Survey</h2>
+    <p class="hint">Please complete the SurveyHeart form. If it does not display inside this page, use the button below to open it directly.</p>
+    <div class="frame-wrap"><iframe src="https://form.svhrt.com/66cf3cbc3d8bc046aa939cec" title="Royal Red Sandalwood SurveyHeart form" loading="lazy" allow="clipboard-write; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <div class="fallback"><p>Having trouble viewing the embedded form?</p><a class="btn" href="https://form.svhrt.com/66cf3cbc3d8bc046aa939cec" target="_blank" rel="noopener">Open Survey Form ↗</a></div>
+  </section></main>
+  <footer>Need help? Call <a href="tel:+917671809960">7671809960</a> · <a href="https://wa.me/917671809960" target="_blank" rel="noopener">WhatsApp us</a><br>© <span id="year"></span> Royal Red Sandalwood Farmlands</footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
