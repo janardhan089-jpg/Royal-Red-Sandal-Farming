@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#073b25">
+  <meta name="description" content="Royal Red Sandalwood Farming — explore plantation information, project photos, investment plan details, and contact information.">
+  <title>Royal Red Sandalwood Farming | Plantation & Project Information</title>
+  <style>
+    :root {
+      --forest: #073b25;
+      --forest-dark: #032718;
+      --leaf: #17643d;
+      --gold: #f2c94c;
+      --cream: #fbf7ed;
+      --ink: #1b2b20;
+      --muted: #647067;
+      --red: #a91f22;
+      --white: #fff;
+      --shadow: 0 18px 48px rgba(8, 35, 21, .13);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; }
+    a { color: inherit; }
+    .topbar { background: #022b1a; color: #fff; padding: 8px 5%; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: .83rem; }
+    .topbar a { text-decoration: none; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.96); backdrop-filter: blur(12px); box-shadow: 0 3px 18px rgba(0,0,0,.08); }
+    .nav { max-width: 1240px; margin: auto; padding: 13px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; line-height: 1.05; }
+    .brand-mark { display:grid; place-items:center; width:58px; height:58px; flex:0 0 58px; border-radius:50%; font-size:2rem; color:#f2c94c; background:radial-gradient(circle at 35% 25%,#267348,#032718 72%); border:2px solid #d8b34a; box-shadow:0 4px 14px #073b2530; }
+    .brand-wordmark strong { letter-spacing:.09em; text-shadow:0 1px 0 #f7e7c4; }
+    .brand-wordmark small { letter-spacing:.105em; }
+    .brand strong { display: block; color: var(--red); font-family: Georgia, serif; font-size: 1.65rem; letter-spacing: .03em; }
+    .brand small { display: block; color: var(--forest); font-weight: 800; letter-spacing: .12em; font-size: .76rem; }
+    .navlinks { display: flex; gap: 21px; align-items: center; flex-wrap: wrap; }
+    .navlinks a { text-decoration: none; font-weight: 700; font-size: .92rem; }
+    .navlinks a:hover { color: var(--red); }
+    .navlinks .nav-cta { color: white; background: var(--red); padding: 10px 16px; border-radius: 999px; }
+    .hero { min-height: 610px; position: relative; isolation: isolate; display: flex; align-items: center; overflow: hidden; color: #fff; background: var(--forest); }
+    .hero::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("Royal%20Red%20Sandalwood%20Plantation%20Journey.png") center 48% / cover no-repeat; transform: scale(1.02); }
+    .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(2,32,18,.94) 0%, rgba(3,47,27,.80) 42%, rgba(3,36,22,.23) 100%), linear-gradient(0deg, rgba(0,0,0,.28), transparent 40%); }
+    .hero-inner { width: min(1240px, 100%); margin: auto; padding: 75px 5%; }
+    .eyebrow { display: inline-flex; gap: 9px; align-items: center; color: var(--gold); font-weight: 800; letter-spacing: .16em; text-transform: uppercase; font-size: .78rem; }
+    h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(3rem, 7vw, 6.1rem); line-height: .99; margin: 20px 0; max-width: 760px; letter-spacing: -.035em; }
+    h1 span { color: var(--gold); }
+    .hero p { max-width: 640px; font-size: clamp(1rem, 1.7vw, 1.2rem); color: #f4f7f3; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 28px; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 9px; text-decoration: none; border-radius: 999px; padding: 13px 21px; font-weight: 800; transition: transform .2s, box-shadow .2s; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 9px 22px #0003; }
+    .btn-gold { background: var(--gold); color: #172719; }
+    .btn-outline { border: 1.5px solid #fff; color: #fff; background: #ffffff12; }
+    .trust-strip { background: #fff; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; box-shadow: var(--shadow); }
+    .trust-item { padding: 22px 15px; text-align: center; border-right: 1px solid #e7e8df; }
+    .trust-item b { display: block; color: var(--forest); font-size: 1rem; }
+    .trust-item span { font-size: .86rem; color: var(--muted); }
+    section { padding: 78px 5%; }
+    .section-wrap { max-width: 1240px; margin: auto; }
+    .section-head { text-align: center; max-width: 760px; margin: 0 auto 36px; }
+    .section-head .eyebrow { color: var(--leaf); }
+    h2 { margin: 10px 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.12; color: var(--forest); }
+    .section-head p { color: var(--muted); margin: 12px auto 0; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 42px; }
+    .about-photo { min-height: 390px; border-radius: 26px; background: url("Royal%20Red%20Sandalwood%20Under%20Glass.png") center / cover no-repeat; box-shadow: var(--shadow); position: relative; overflow: hidden; }
+    .about-photo::after { content: "ROYAL RED SANDALWOOD"; position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; color: white; font-family: Georgia, serif; font-size: 1.4rem; font-weight: bold; background: linear-gradient(transparent, #032718dc); }
+    .about-copy p { color: #59675d; }
+    .checklist { list-style: none; padding: 0; margin: 22px 0; display: grid; gap: 12px; }
+    .checklist li { display: flex; gap: 10px; align-items: flex-start; }
+    .check { color: var(--leaf); font-weight: 900; }
+    .plans { background: linear-gradient(180deg, #f0f4e9, #fffaf0); }
+    .plan-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .plan-card { background: white; border: 1px solid #e8e8dd; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 25px #153b2510; transition: transform .2s, box-shadow .2s; }
+    .plan-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .plan-top { padding: 18px; color: white; background: var(--forest); }
+    .plan-card:nth-child(2) .plan-top { background: #a51f24; }
+    .plan-card:nth-child(3) .plan-top { background: #17558b; }
+    .plan-card:nth-child(4) .plan-top { background: #8b570b; }
+    .plan-top h3 { margin: 0; font-family: Georgia, serif; font-size: 1.28rem; }
+    .plan-top p { margin: 4px 0 0; opacity: .88; font-size: .9rem; }
+    .plan-body { padding: 19px; }
+    .price { font-size: 1.65rem; color: var(--forest); font-weight: 900; margin: 0 0 12px; }
+    .plan-body p { margin: 8px 0; color: #536056; font-size: .94rem; }
+    .plan-body .btn { width: 100%; margin-top: 12px; padding: 11px 13px; font-size: .9rem; background: #f5e6a9; color: #342a08; }
+    .note { margin-top: 22px; border-left: 4px solid var(--gold); background: #fff; border-radius: 8px; padding: 15px 18px; color: #5e6258; font-size: .9rem; }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .feature { padding: 25px; border-radius: 17px; background: white; border: 1px solid #e8e9df; }
+    .feature .icon { font-size: 1.8rem; }
+    .feature h3 { margin: 10px 0 5px; color: var(--forest); }
+    .feature p { color: var(--muted); margin: 0; font-size: .95rem; }
+    .gallery { background: #082f1e; color: white; }
+    .gallery h2 { color: white; }
+    .gallery .section-head p { color: #d2ded5; }
+    .gallery .eyebrow { color: var(--gold); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .gallery-card { min-height: 240px; border-radius: 16px; overflow: hidden; position: relative; background: #173c2a; }
+    .gallery-card img { width: 100%; height: 100%; min-height: 240px; display: block; object-fit: cover; transition: transform .4s; }
+    .gallery-card:hover img { transform: scale(1.06); }
+    .gallery-card span { position: absolute; left: 0; right: 0; bottom: 0; padding: 32px 17px 15px; font-weight: 800; background: linear-gradient(transparent, #00190fd9); }
+    .legal-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 25px; }
+    .legal-card { background: white; border-radius: 20px; padding: 30px; box-shadow: 0 10px 30px #153b250b; }
+    .legal-card h3 { margin-top: 0; color: var(--forest); font-family: Georgia, serif; font-size: 1.45rem; }
+    .legal-card p { color: var(--muted); }
+    .contact { background: linear-gradient(135deg, #f6f0dc, #e5efdf); }
+    .contact-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; align-items: center; padding: clamp(25px, 5vw, 55px); border-radius: 26px; background: white; box-shadow: var(--shadow); }
+    .contact-list { display: grid; gap: 15px; }
+    .contact-row { display: flex; gap: 13px; align-items: flex-start; }
+    .contact-row .icon { display: grid; place-items: center; flex: 0 0 44px; height: 44px; border-radius: 50%; background: #e8f1e5; font-size: 1.2rem; }
+    .contact-row b { display: block; color: var(--forest); }
+    .contact-row a { text-decoration: none; overflow-wrap: anywhere; }
+    .contact-row a:hover { color: var(--red); }
+    .contact-cta { border-radius: 20px; padding: 28px; color: white; background: linear-gradient(135deg, #073b25, #145b38); }
+    .contact-cta h3 { font: bold 1.8rem Georgia, serif; margin-top: 0; }
+    .contact-cta p { color: #dbe9df; }
+    footer { background: #031e13; color: #dbe6dd; padding: 27px 5%; text-align: center; font-size: .88rem; }
+    footer a { color: var(--gold); }
+    .disclaimer { font-size: .82rem; color: #a9b8ac; max-width: 1000px; margin: 12px auto 0; }
+    .enquiry-form { display:grid; gap:13px; margin-top:18px; }
+    .enquiry-form label { display:grid; gap:6px; color:#173b28; font-weight:700; font-size:.92rem; }
+    .enquiry-form input, .enquiry-form select, .enquiry-form textarea { width:100%; border:1px solid #cbd8cc; border-radius:11px; padding:13px 14px; font:inherit; color:#1b2b20; background:#fff; }
+    .enquiry-form input:focus, .enquiry-form select:focus, .enquiry-form textarea:focus { outline:3px solid #f2c94c66; border-color:#17643d; }
+    .enquiry-form .consent { display:flex; align-items:flex-start; gap:9px; font-weight:500; font-size:.82rem; color:#536056; }
+    .enquiry-form .consent input { width:auto; margin-top:4px; }
+    .social-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .social-links a { display:inline-flex; align-items:center; gap:7px; padding:9px 13px; border:1px solid #ffffff55; border-radius:999px; color:white; text-decoration:none; font-weight:700; font-size:.88rem; }
+    .social-links a:hover { background:#ffffff18; }
+    .form-help { color:#5c6b60; font-size:.82rem; margin:0; }
+    @media (max-width: 980px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .navlinks { gap: 12px 18px; }
+      .plan-grid { grid-template-columns: repeat(2, 1fr); }
+      .trust-strip { grid-template-columns: repeat(2, 1fr); }
+      .about-grid, .legal-grid, .contact-panel { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .topbar { justify-content: center; text-align: center; }
+      .nav { padding: 12px 18px; }
+      .navlinks { gap: 10px 14px; }
+      .navlinks a { font-size: .82rem; }
+      .navlinks .nav-cta { padding: 7px 11px; }
+      .hero { min-height: 570px; }
+      .hero-inner { padding: 55px 6%; }
+      section { padding: 58px 5%; }
+      .plan-grid, .features-grid, .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-card, .gallery-card img { min-height: 260px; }
+      .trust-item { padding: 17px 9px; }
+      .about-photo { min-height: 290px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <span>🌱 Royal Red Sandalwood Farming</span>
+    <span><a href="tel:+917671809960">☎ 7671809960</a> &nbsp; · &nbsp; <a href="mailto:Royalredsandal@gmail.com">✉ Royalredsandal@gmail.com</a></span>
+  </div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Royal Red Sandalwood Farming home">
+        <span class="brand-mark" aria-hidden="true">🌳</span>
+        <span class="brand-wordmark"><strong>ROYAL</strong><small>RED SANDALWOOD FARMLANDS</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#sandalwood">Red Sandalwood</a>
+        <a href="#plans">Plans</a>
+        <a href="#projects">Projects</a>
+        <a href="#legal">Legal Guide</a>
+        <a href="#gallery">Gallery</a>
+        <a class="nav-cta" href="#contact">Contact Us ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="eyebrow">🌿 Cultivation · Project information · Responsible planning</div>
+        <h1>Grow with nature.<br><span>Plan with care.</span></h1>
+        <p>Welcome to Royal Red Sandalwood Farming. Explore plantation information, review project details, view photos, and contact us to ask questions before making any decision.</p>
+        <div class="buttons">
+          <a class="btn btn-gold" href="#plans">Explore Plans ↓</a>
+          <a class="btn btn-outline" href="#contact">Request Information ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip" aria-label="Website highlights">
+      <div class="trust-item"><b>🌳 Plantation Focus</b><span>Learn about cultivation</span></div>
+      <div class="trust-item"><b>📋 Project Details</b><span>Ask for written documents</span></div>
+      <div class="trust-item"><b>📍 Project Locations</b><span>Confirm site information</span></div>
+      <div class="trust-item"><b>🤝 Direct Contact</b><span>Speak with our team</span></div>
+    </div>
+
+    <section id="about">
+      <div class="section-wrap about-grid">
+        <div class="about-photo" role="img" aria-label="Red sandalwood plantation image"></div>
+        <div class="about-copy">
+          <div class="eyebrow">About Royal</div>
+          <h2>A greener vision for red sandalwood farming</h2>
+          <p>This website brings together general plantation information, project photos, plan details supplied for enquiry, and contact options in one place.</p>
+          <p>Before purchasing land or entering an agreement, independently verify the land title, survey boundaries, registration documents, plantation rights, maintenance terms, and all applicable rules.</p>
+          <ul class="checklist">
+            <li><span class="check">✓</span><span>Request and review project documents before paying.</span></li>
+            <li><span class="check">✓</span><span>Visit the site and confirm the exact plot location.</span></li>
+            <li><span class="check">✓</span><span>Get independent legal and financial advice.</span></li>
+          </ul>
+          <a class="btn btn-gold" href="#contact">Ask for Project Details →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sandalwood" style="background:#fff;">
+      <div class="section-wrap">
+        <div class="section-head">
+          <div class="eyebrow">Know the tree</div>
+          <h2>Red sandalwood & plantation care</h2>
+          <p>Explore the plantation images and ask for project-specific information about location, planting, maintenance, and applicable permissions.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature"><div class="icon">🌱</div><h3>Plantation planning</h3><p>Understand site suitability, planting layout, irrigation, and ongoing care requirements.</p></article>
+          <article class="feature"><div class="icon">💧</div><h3>Water & maintenance</h3><p>Ask for details of irrigation arrangements, maintenance responsibilities, and service terms.</p></article>
+          <article class="feature"><div class="icon">📑</div><h3>Documentation first</h3><p>Confirm ownership, registration, tree-harvesting rules, transport permissions, and sale requirements with qualified local professionals.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans" id="plans">
+      <div class="section-wrap">
+        <div class="section-head">
+          <div class="eyebrow">Project information</div>
+          <h2>Investment plan enquiries</h2>
+          <p>The following figures are indicative details from the supplied promotional material. Please confirm current prices, plot areas, fees, terms, and availability directly in writing.</p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan-card">
+            <div class="plan-top"><h3>11 Cents Plan</h3><p>Approx. 532 sq. yards</p></div>
+            <div class="plan-body"><p class="price">₹5.25 Lakhs</p><p>Plant quantity shown: 50</p><p>Registration charges shown: ₹35,000</p><a class="btn" href="#contact">Request details →</a></div>
+          </article>
+          <article class="plan-card">
+            <div class="plan-top"><h3>22 Cents Plan</h3><p>Approx. 1,064 sq. yards</p></div>
+            <div class="plan-body"><p class="price">₹10 Lakhs</p><p>Plant quantity shown: 100</p><p>Registration charges shown: ₹50,000</p><a class="btn" href="#contact">Request details →</a></div>
+          </article>
+          <article class="plan-card">
+            <div class="plan-top"><h3>50 Cents Plan</h3><p>Approx. 2,420 sq. yards</p></div>
+            <div class="plan-body"><p class="price">₹20 Lakhs</p><p>Plant quantity shown: 210</p><p>Registration charges shown: ₹75,000</p><a class="btn" href="#contact">Request details →</a></div>
+          </article>
+          <article class="plan-card">
+            <div class="plan-top"><h3>1 Acre Plan</h3><p>Approx. 4,840 sq. yards</p></div>
+            <div class="plan-body"><p class="price">₹40 Lakhs</p><p>Plant quantity shown: 420</p><p>Registration charges shown: ₹1 Lakh</p><a class="btn" href="#contact">Request details →</a></div>
+          </article>
+        </div>
+        <div class="note"><strong>Important:</strong> Any future value, yield, or return is uncertain and is not guaranteed by this page. The plan figures above are reproduced as enquiry information from supplied materials, not independently verified offers or financial advice.</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-wrap">
+        <div class="section-head">
+          <div class="eyebrow">Explore the project</div>
+          <h2>What to check before visiting</h2>
+          <p>Use these prompts when requesting information about a plantation or farmland project.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature"><div class="icon">📍</div><h3>Exact location</h3><p>Ask for village, mandal, survey numbers, map, boundaries, and an opportunity to inspect the land.</p></article>
+          <article class="feature"><div class="icon">🧾</div><h3>Land records</h3><p>Have an independent lawyer verify title history, encumbrances, access, registration eligibility, and the agreement.</p></article>
+          <article class="feature"><div class="icon">🌳</div><h3>Plantation terms</h3><p>Get written details on tree ownership, maintenance, survival, harvesting, transport, and sale permissions.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="section-wrap">
+        <div class="section-head">
+          <div class="eyebrow">From our gallery</div>
+          <h2>Plantation photos & project posters</h2>
+          <p>Browse the images uploaded to the website repository. Add more photos by uploading them to the same GitHub repository and updating these image paths.</p>
+        </div>
+        <div class="gallery-grid">
+          <a class="gallery-card" href="Royal%20Red%20Sandalwood%20Plantation%20Collage.png" target="_blank" rel="noopener"><img src="Royal%20Red%20Sandalwood%20Plantation%20Collage.png" alt="Royal Red Sandalwood plantation collage" loading="lazy"><span>Plantation collage</span></a>
+          <a class="gallery-card" href="Royal%20Red%20Sandalwood%20Plantation%20Journey.png" target="_blank" rel="noopener"><img src="Royal%20Red%20Sandalwood%20Plantation%20Journey.png" alt="Red sandalwood plantation journey" loading="lazy"><span>Plantation journey</span></a>
+          <a class="gallery-card" href="Royal%20Red%20Sandalwood%20Under%20Glass.png" target="_blank" rel="noopener"><img src="Royal%20Red%20Sandalwood%20Under%20Glass.png" alt="Royal Red Sandalwood plantation project image" loading="lazy"><span>Plantation project</span></a>
+          <a class="gallery-card" href="plantation-project.jpg" target="_blank" rel="noopener"><img src="plantation-project.jpg" alt="Plantation project photo" loading="lazy"><span>Project overview</span></a>
+          <a class="gallery-card" href="poster-farmland.jpg" target="_blank" rel="noopener"><img src="poster-farmland.jpg" alt="Farmland information poster" loading="lazy"><span>Farmland information</span></a>
+          <a class="gallery-card" href="poster-investment.jpg" target="_blank" rel="noopener"><img src="poster-investment.jpg" alt="Investment information poster" loading="lazy"><span>Plan information</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="legal">
+      <div class="section-wrap">
+        <div class="section-head">
+          <div class="eyebrow">Before you decide</div>
+          <h2>Independent verification matters</h2>
+          <p>Promotional statements, certificates, return estimates, and legal claims should be checked against original records.</p>
+        </div>
+        <div class="legal-grid">
+          <article class="legal-card"><h3>Documents to request</h3><ul class="checklist"><li><span class="check">✓</span><span>Current title deed and encumbrance certificate</span></li><li><span class="check">✓</span><span>Survey map, boundaries, access rights, and land classification</span></li><li><span class="check">✓</span><span>Draft sale/lease agreement and complete fee schedule</span></li><li><span class="check">✓</span><span>Written explanation of tree ownership and harvest/sale permissions</span></li></ul></article>
+          <article class="legal-card"><h3>Keep expectations realistic</h3><p>Farmland and tree-plantation projects can involve land-title, regulatory, environmental, liquidity, weather, disease, market-price, and management risks. Do not rely on projected returns alone. Verify every claim independently and consult a qualified lawyer and financial adviser before committing money.</p><a class="btn btn-gold" href="#contact">Ask a question →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-wrap contact-panel">
+        <div>
+          <div class="eyebrow">Get in touch</div>
+          <h2>Let’s talk about your questions.</h2>
+          <p>Contact Royal Red Sandalwood Farming for more information about the plantation, project images, current plan details, and site visits.</p>
+          <div class="contact-list">
+            <div class="contact-row"><span class="icon">📞</span><div><b>Phone</b><a href="tel:+917671809960">7671809960</a></div></div>
+            <div class="contact-row"><span class="icon">✉️</span><div><b>Email</b><a href="mailto:Royalredsandal@gmail.com">Royalredsandal@gmail.com</a></div></div>
+            <div class="contact-row"><span class="icon">📱</span><div><b>WhatsApp</b><a href="https://wa.me/917671809960" target="_blank" rel="noopener">Chat with us: 7671809960</a></div></div>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <h3>Choose Your Plot & Enquire</h3>
+          <p>Fill in your details and select the plot you are interested in. Your enquiry will open directly in WhatsApp.</p>
+          <form class="enquiry-form" id="plotEnquiry">
+            <label for="customerName">Your name
+              <input id="customerName" name="name" type="text" placeholder="Enter your name" autocomplete="name" required>
+            </label>
+            <label for="customerPhone">Your mobile number
+              <input id="customerPhone" name="phone" type="tel" inputmode="tel" placeholder="Enter your mobile number" autocomplete="tel" pattern="[0-9+() -]{8,18}" required>
+            </label>
+            <label for="plotChoice">Which plot are you interested in?
+              <select id="plotChoice" name="plot" required>
+                <option value="" selected disabled>Select a plot</option>
+                <option value="11 cents — ₹5.25 lakhs">11 cents — ₹5.25 lakhs</option>
+                <option value="22 cents — ₹10 lakhs">22 cents — ₹10 lakhs</option>
+                <option value="Half acre (50 cents) — ₹20 lakhs">Half acre (50 cents) — ₹20 lakhs</option>
+                <option value="1 acre — ₹40 lakhs">1 acre — ₹40 lakhs</option>
+              </select>
+            </label>
+            <label for="customerMessage">Message (optional)
+              <textarea id="customerMessage" name="message" rows="3" placeholder="Any questions or preferred time to contact you?"></textarea>
+            </label>
+            <label class="consent"><input type="checkbox" required> <span>I agree to send these details to Royal Red Sandalwood Farming through WhatsApp for this enquiry.</span></label>
+            <button class="btn btn-gold" type="submit" style="border:0;cursor:pointer;width:100%;">Submit Enquiry on WhatsApp ↗</button>
+            <p class="form-help">WhatsApp will open with your enquiry message. Please tap Send in WhatsApp to complete submission.</p>
+          </form>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://www.youtube.com/@RoyalRedSandal" target="_blank" rel="noopener">▶ YouTube</a>
+            <a href="https://www.instagram.com/royalredsandal?rpxt=MTl0eTRpbng3Z3Y3Ng==" target="_blank" rel="noopener">◎ Instagram</a>
+            <a href="https://www.facebook.com/share/19vnBW3xDZ/" target="_blank" rel="noopener">f Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>👑 Royal Red Sandalwood Farming</strong><br>
+    Phone: <a href="tel:+917671809960">7671809960</a> · Email: <a href="mailto:Royalredsandal@gmail.com">Royalredsandal@gmail.com</a><br>
+    <a href="https://www.youtube.com/@RoyalRedSandal" target="_blank" rel="noopener">YouTube</a> ·
+    <a href="https://www.instagram.com/royalredsandal?rpxt=MTl0eTRpbng3Z3Y3Ng==" target="_blank" rel="noopener">Instagram</a> ·
+    <a href="https://www.facebook.com/share/19vnBW3xDZ/" target="_blank" rel="noopener">Facebook</a>
+    <p class="disclaimer">This website is for general project information only. Prices, availability, certifications, legal status, and projected outcomes are not independently verified here and should be confirmed from original documents. No return or profit is guaranteed. Obtain independent legal and financial advice before investing.</p>
+    <p>© <span id="year"></span> Royal Red Sandalwood Farming. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("plotEnquiry").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      if (!form.reportValidity()) return;
+      const name = document.getElementById("customerName").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+      const plot = document.getElementById("plotChoice").value;
+      const message = document.getElementById("customerMessage").value.trim();
+      const text = [
+        "Hello Royal Red Sandalwood Farming, I would like to enquire about a plot.",
+        "Name: " + name,
+        "Mobile: " + phone,
+        "Plot selected: " + plot,
+        message ? "Message: " + message : ""
+      ].filter(Boolean).join("\\n");
+      window.open("https://wa.me/917671809960?text=" + encodeURIComponent(text), "_blank", "noopener");
+    });
+  </script>
+
+</body>
+</html>
